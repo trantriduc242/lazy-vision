@@ -1,0 +1,6 @@
+{
+    "eye_tracking": true,
+    "gesture_control": true,
+    "sleep_mode": true,
+    "auto_mode": true
+}

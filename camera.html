@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Camera Feed</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            background: linear-gradient(180deg, #0a0a0a, #111);
+            color: #00f7ff;
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            color: #00f7ff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        h1.title {
+            font-size: 2rem;
+            color: #00f7ff;
+            text-shadow: 0 0 10px #00f7ff;
+            margin-top: 40px;
+        }
+
+        .video-frame {
+            margin-top: 30px;
+            max-width: 90%;
+            height: auto;
+            border: 3px solid #00f7ff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px #00f7ff66;
+        }
+    </style>
+</head>
+<body>
+    <a href="{{ url_for('main.home') }}" class="back-button">← Back</a>
+    <h1 class="title">Live Camera Feed</h1>
+    <img src="{{ url_for('main.camera_feed') }}" class="video-frame">
+</body>
+</html>

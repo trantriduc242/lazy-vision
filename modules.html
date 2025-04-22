@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modules</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <a href="{{ url_for('main.home') }}" class="back-button">← Back</a>
+
+    <div class="container">
+        <h1 class="title">Modules</h1>
+        <div class="module-panel">
+            {% for key, value in settings.items() %}
+                <div class="module-item">
+                    <span class="module-label">{{ key.replace("_", " ").title() }}</span>
+                    <a class="toggle-button {{ 'on' if value else 'off' }}"
+                       href="{{ url_for('main.toggle_module', module=key) }}">
+                        {{ 'ON' if value else 'OFF' }}
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

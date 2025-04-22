@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manual Servo Control</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <a href="{{ url_for('main.home') }}" class="back-button">← Back</a>
+
+    <div class="container">
+        <h1 class="title">Manual Servo Control</h1>
+
+        <div class="servo-grid">
+            <div class="servo-row">
+                <a href="{{ url_for('main.servo_control', direction='up') }}" class="arrow-button">↑</a>
+            </div>
+            <div class="servo-row">
+                <a href="{{ url_for('main.servo_control', direction='left') }}" class="arrow-button">←</a>
+                <a href="{{ url_for('main.servo_control', direction='center') }}" class="arrow-button">•</a>
+                <a href="{{ url_for('main.servo_control', direction='right') }}" class="arrow-button">→</a>
+            </div>
+            <div class="servo-row">
+                <a href="{{ url_for('main.servo_control', direction='down') }}" class="arrow-button">↓</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

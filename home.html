@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LazyVision Control</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>LazyVision Control Panel</h1>
+    <div class="module">
+        <a href="{{ url_for('main.modules') }}">Modules</a>
+    </div>
+    <div class="servo">
+        <a href="{{ url_for('main.servo_page') }}">Manual Servo Control</a>
+    </div>
+</body>
+</html>
