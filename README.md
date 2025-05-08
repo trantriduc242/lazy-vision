@@ -26,7 +26,7 @@
 - [OpenCV](https://opencv.org/)
 - [MediaPipe](https://google.github.io/mediapipe/)
 - [Flask](https://flask.palletsprojects.com/)
-- Raspberry Pi 4B
+- Raspberry Pi 5
 - SG90/MG90S Servo Motors
 - Arducam IR USB Camera
 - HTML + CSS (for dashboard)
